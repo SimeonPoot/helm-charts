@@ -3,6 +3,10 @@
   "extends": [
     "config:base"
   ],
+  "helm": {
+    "fileMatch": [
+      "(^|/)Chart\\.ya?ml$"
+    ]},
   "commitMessageTopic": "helm values {{depName}}",
   "pinDigests": false
 }
