@@ -1,7 +1,8 @@
 {
   "commitMessageTopic": "helm values {{depName}}",
-  "fileMatch": [
-    "(^|/)values\\.ya?ml$"
-  ],
+  "kubernetes": {
+    "fileMatch": [
+      "(^|/)values\\.ya?ml$"
+    ]},
   "pinDigests": false
 }
