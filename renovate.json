@@ -3,7 +3,6 @@
 	"extends": [
 		"config:recommended"
 	],
-	"dependencyDashboardApproval": true,
 	"commitMessageTopic": "helm values {{depName}}",
 	"pinDigests": false,
 	"regexManagers": [{
