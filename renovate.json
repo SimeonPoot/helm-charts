@@ -5,7 +5,7 @@
   ],
   "dependencyDashboardApproval": true,
   "commitMessageTopic": "helm values {{depName}}",
-  "pinDigests": false
+  "pinDigests": false,
   "regexManagers": [
     {
       "customType": "regex",
