@@ -4,5 +4,9 @@
    "config:recommended", ":dependencyDashboard"
   ],
   "enabled": true,
-  "automergeType": "pr"
+  "packageRules": [
+    {
+      "prCreation": "immediate"
+    }
+  ],
 }
