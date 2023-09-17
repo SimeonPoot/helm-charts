@@ -6,4 +6,16 @@
   "dependencyDashboardApproval": true,
   "commitMessageTopic": "helm values {{depName}}",
   "pinDigests": false
+  "regexManagers": [
+    {
+      "customType": "regex",
+      "description": "Update cert-manager docker image references",
+      "fileMatch": ["^helm\\/charts\\/cert-manager\\/Chart\\.yaml$"],
+      "matchStrings": [
+        "appVersion: '(?<currentValue>.*?)'\\s+",
+        "version: '(?<currentValue>.*?)'\\s+"
+      ],
+      "depNameTemplate": "ghcr.io/jetstack/cert-manager",
+      "datasourceTemplate": "docker"
+    }
 }
