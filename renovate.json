@@ -6,6 +6,7 @@
   "enabled": true,
   "packageRules": [
     {
+      "matchDatasources": ["gomod", "go"],
       "prCreation": "immediate"
     }
   ],
