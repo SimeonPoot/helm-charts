@@ -3,11 +3,18 @@
   "extends": [
    "config:recommended", ":dependencyDashboard"
   ],
+  "postUpdateOptions": ["helmUpdateSubChartArchives"],
+  "packageRules": [
+    {
+      "matchDatasources": ["gomod", "go", "helm", "golang-version"],
+      "prCreation": "immediate"
+    }
+  ],
   "postUpgradeTasks": {
     "commands": [ "install-tool helm v3.8.1", "helm dependency update" ],
     "fileFilters": [
       "Chart.yaml",
       "charts/*.tgz"
     ]
-  },
+  }
  }
