@@ -11,9 +11,9 @@
       "prCreation": "immediate"
     }
   ],
-  "allowedPostUpgradeCommands": [ "^install-tool helm v3.8.1$", "^helm dependency update$"],
+  "allowedPostUpgradeCommands": [ "^install-tool helm v3.8.1$", "^helm dependency update$","^tar xz"],
   "postUpgradeTasks": {
-    "commands": [ "install-tool helm v3.8.1", "helm dependency update" ],
+    "commands": [ "install-tool helm v3.8.1", "helm dependency update", "tar xz" ],
     "fileFilters": [
       "Chart.yaml",
       "charts/*.tgz"
