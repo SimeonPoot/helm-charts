@@ -6,7 +6,7 @@
   "postUpdateOptions": ["helmUpdateSubChartArchives"],
   "packageRules": [
     {
-      "matchDatasources": ["gomod", "go", "helm", "golang-version"],
+      "matchDatasources": ["gomod", "go", "helm", "golang-version", "helmv3"],
       "prCreation": "immediate"
     }
   ],
