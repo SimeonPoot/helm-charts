@@ -11,7 +11,7 @@ icon: https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd
 dependencies:
 - name: cert-manager
   version: "v1.10.2"
-  repository: https://github.com/cert-manager/cert-manager
+  repository: https://charts.jetstack.io
 keywords:
 - cert-manager
 - kube-lego
