@@ -2,5 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
    "config:recommended", ":dependencyDashboard"
-  ]
+  ],
+  "postUpgradeTasks": {
+    "commands": [ "install-tool helm v3.8.1", "helm dependency update" ],
+    "fileFilters": [
+      "Chart.yaml",
+      "charts/*.tgz"
+    ]
+  },
  }
