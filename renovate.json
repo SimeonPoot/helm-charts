@@ -6,8 +6,8 @@
   "enabled": true,
   "packageRules": [
     {
-      "matchDatasources": ["gomod", "go", "helm"],
+      "matchDatasources": ["gomod", "go", "helm", "golang-version"],
       "prCreation": "immediate"
     }
-  ],
+  ]
 }
