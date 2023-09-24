@@ -10,7 +10,7 @@
       "Chart.yaml",
       "charts/*.tgz"
     ]
-  }
+  },
   "packageRules": [
     {
       "matchDatasources": ["gomod", "go", "helm", "golang-version"],
