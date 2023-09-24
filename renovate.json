@@ -11,6 +11,7 @@
       "charts/*.tgz"
     ]
   },
+  "postUpdateOptions": ["helmUpdateSubChartArchives"],
   "packageRules": [
     {
       "matchDatasources": ["gomod", "go", "helm", "golang-version"],
