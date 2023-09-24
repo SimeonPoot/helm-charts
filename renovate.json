@@ -14,7 +14,7 @@
     "commands": [ "install-tool helm v3.8.1", "helm dependency update", "tar xf" ],
     "fileFilters": [
       "Chart.yaml",
-      "charts/*.tgz"
+      "*.tgz"
     ]
   }
  }
