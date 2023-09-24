@@ -8,6 +8,10 @@ appVersion: "v1.10.2"
 description: A Helm chart for cert-manager
 home: https://github.com/cert-manager/cert-manager
 icon: https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png
+dependencies:
+- name: cert-manager
+  version: "v1.10.2"
+  repository: https://github.com/cert-manager/cert-manager
 keywords:
 - cert-manager
 - kube-lego
