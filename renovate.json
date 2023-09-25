@@ -2,12 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
    "config:recommended", ":dependencyDashboard"
-  ],
-  "packageRules": [
-    {
-      "matchDatasources": ["gomod", "go", "helm", "golang-version", "helmv3"],
-      "enabled": true,
-      "prCreation": "immediate"
-    }
   ]
  }
